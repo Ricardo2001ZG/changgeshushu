@@ -5,7 +5,7 @@
 
 内含桑柔计算器、100级治疗会心收益计算器。
 
-本项目v1.2.0目前已实装于 [奶鸽单分收益计算器](https://jx3calcofgugugu.ricardo2001zg.com/jx3_calc_of_gugugu/index.html)
+本项目v1.2.0目前已实装于 [奶鸽单分收益计算器](https://miao.ricardo2001zg.com/jx3_calc_of_gugugu/app.html)
 
 ## 开始
 
