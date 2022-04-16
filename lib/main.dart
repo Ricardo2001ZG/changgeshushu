@@ -4,12 +4,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
 // 此处为路由实现，处理页面跳转
-class ChanggeShushuRoute extends StatefulWidget {
+class ChangGeShuShuRoute extends StatefulWidget {
   @override
-  _ChanggeShushuRouteState createState() => _ChanggeShushuRouteState();
+  _ChangGeShuShuRouteState createState() => _ChangGeShuShuRouteState();
 }
 
-class _ChanggeShushuRouteState extends State<ChanggeShushuRoute> {
+class _ChangGeShuShuRouteState extends State<ChangGeShuShuRoute> {
   Widget build(BuildContext context) {
     return MaterialApp(
       initialRoute:"/main",
@@ -643,4 +643,4 @@ class _ChanggeShushuMainState extends State<ChanggeShushuMain> with SingleTicker
   }
 }
 
-void main() => runApp(ChanggeShushuRoute());
+void main() => runApp(ChangGeShuShuRoute());
