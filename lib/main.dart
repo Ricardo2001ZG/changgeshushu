@@ -148,9 +148,12 @@ class _SangRouCalcMainState extends State<SangRouCalcMain> {
                   height: 30,
                   child: Row(children: [
                     Container(width: 40,height: double.infinity,), // 空白填充
-                    RaisedButton(
-                      child: Text('计算',style: TextStyle(color: Colors.white),),
-                      color: Color(0xff4db6ac),
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        primary: Color(0xff4db6ac), // background
+                        onPrimary: Colors.white, // foreground
+                      ),
+                      child: Text('计算'),
                       onPressed: (){
                         setState(() {
                           /*
@@ -189,9 +192,12 @@ class _SangRouCalcMainState extends State<SangRouCalcMain> {
                       },
                     ),
                     Expanded(child: Container(width: double.infinity,height: double.infinity,),),
-                    RaisedButton(
-                      child: Text('清空',style: TextStyle(color: Colors.white),),
-                      color: Color(0xff4db6ac),
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        primary: Color(0xff4db6ac), // background
+                        onPrimary: Colors.white, // foreground
+                      ),
+                      child: Text('清空'),
                       onPressed: (){
                         setState(() {
                           _dController.text = '0';
@@ -452,9 +458,12 @@ class _Jx3CalcOfGuguguMainState extends State<Jx3CalcOfGuguguMain> {
                   height: 30,
                   child: Row(children: [
                     Container(width: 40,height: double.infinity,), // 空白填充
-                    RaisedButton(
-                      child: Text('计算',style: TextStyle(color: Colors.white),),
-                      color: Color(0xff4db6ac),
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        primary: Color(0xff4db6ac), // background
+                        onPrimary: Colors.white, // foreground
+                      ),
+                      child: Text('计算'),
                       onPressed: (){
                         setState(() {
                           /*
@@ -487,9 +496,12 @@ class _Jx3CalcOfGuguguMainState extends State<Jx3CalcOfGuguguMain> {
                       },
                     ),
                     Expanded(child: Container(width: double.infinity,height: double.infinity,),),
-                    RaisedButton(
-                      child: Text('清空',style: TextStyle(color: Colors.white),),
-                      color: Color(0xff4db6ac),
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        primary: Color(0xff4db6ac), // background
+                        onPrimary: Colors.white, // foreground
+                      ),
+                      child: Text('清空'),
                       onPressed: (){
                         setState(() {
                           _aController.text = '175.00';
@@ -600,13 +612,13 @@ class _ChanggeShushuMainState extends State<ChanggeShushuMain> with SingleTicker
             languageCode: 'zh', scriptCode: 'Hans', countryCode: 'CN'),
         // Chinese *See Advanced Locales below*
       ],
-      title: 'ChanggeShushu',
+      title: 'ChangGeShuShu',
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Color(0xff009688),
           title: Center(
             child: Text(
-              "长鸽门术数集 v2.0.0",
+              "长鸽门术数集 v2.1.0",
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 16, color: Color(0xffffffff)),
             ),

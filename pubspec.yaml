@@ -1,4 +1,4 @@
-name: changgeshushu
+name: ChangGeShuShu
 description: 长鸽门术数集
 
 # The following line prevents the package from being accidentally published to
@@ -25,7 +25,7 @@ dependencies:
     sdk: flutter
   flutter_localizations:
     sdk: flutter
-  common_utils: ^1.2.4
+  common_utils: ^2.1.0
 
 
   # The following adds the Cupertino Icons font to your application.
