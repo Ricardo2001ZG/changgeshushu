@@ -14,7 +14,7 @@ class _ChangGeShuShuRouteState extends State<ChangGeShuShuRoute> {
     return MaterialApp(
       initialRoute:"/main",
       routes:{
-        "/main":(context) => ChanggeShushuMain(),
+        "/main":(context) => ChangGeShuShuMain(),
       },
     );
   }
@@ -267,13 +267,13 @@ class _SangRouCalcMainState extends State<SangRouCalcMain> {
 }
 
 // 100治疗收益计算
-class Jx3CalcOfGuguguMain extends StatefulWidget {
-  Jx3CalcOfGuguguMain ({Key key}) : super(key : key);
+class Jx3CalcOfGuGuGuMain extends StatefulWidget {
+  Jx3CalcOfGuGuGuMain ({Key key}) : super(key : key);
   @override
-  _Jx3CalcOfGuguguMainState createState() =>  _Jx3CalcOfGuguguMainState();
+  _Jx3CalcOfGuGuGuMainState createState() =>  _Jx3CalcOfGuGuGuMainState();
 }
 
-class _Jx3CalcOfGuguguMainState extends State<Jx3CalcOfGuguguMain> {
+class _Jx3CalcOfGuGuGuMainState extends State<Jx3CalcOfGuGuGuMain> {
   TextEditingController _aController;
   TextEditingController _cController;
   TextEditingController _hController;
@@ -580,18 +580,18 @@ class _Jx3CalcOfGuguguMainState extends State<Jx3CalcOfGuguguMain> {
 }
 
 // 主页面实现
-class ChanggeShushuMain extends StatefulWidget {
-  ChanggeShushuMain ({Key key}) : super(key : key);
+class ChangGeShuShuMain extends StatefulWidget {
+  ChangGeShuShuMain ({Key key}) : super(key : key);
   @override
-  _ChanggeShushuMainState createState() =>  _ChanggeShushuMainState();
+  _ChangGeShuShuMainState createState() =>  _ChangGeShuShuMainState();
 }
 
-class _ChanggeShushuMainState extends State<ChanggeShushuMain> with SingleTickerProviderStateMixin{
+class _ChangGeShuShuMainState extends State<ChangGeShuShuMain> with SingleTickerProviderStateMixin{
   TabController _tabController;
 
   void initState() {
     super.initState();
-    _tabController = TabController(vsync: this,length: 3);
+    _tabController = TabController(vsync: this,length: 2);
   }
 
   void dispose() {
@@ -618,7 +618,7 @@ class _ChanggeShushuMainState extends State<ChanggeShushuMain> with SingleTicker
           backgroundColor: Color(0xff009688),
           title: Center(
             child: Text(
-              "长鸽门术数集 v2.1.0",
+              "长鸽门术数集 v2.2.0",
               textAlign: TextAlign.center,
               style: TextStyle(fontSize: 16, color: Color(0xffffffff)),
             ),
@@ -626,7 +626,7 @@ class _ChanggeShushuMainState extends State<ChanggeShushuMain> with SingleTicker
           bottom: TabBar(
             tabs: <Widget>[
               Tab(text: "110桑柔计算器"),
-              Tab(text: "110属性收益计算器"),
+              // Tab(text: "110属性收益计算器"),
               Tab(text: "100属性收益计算器"),
             ],
             controller: _tabController,  // 记得要带上tabController
@@ -638,6 +638,7 @@ class _ChanggeShushuMainState extends State<ChanggeShushuMain> with SingleTicker
             Center(
                 child: SangRouCalcMain(),
             ),
+            /*
             Center(
                 child: Text(
                   "这是没有公式写不出来的内容",
@@ -645,8 +646,9 @@ class _ChanggeShushuMainState extends State<ChanggeShushuMain> with SingleTicker
                   style: TextStyle(fontSize: 16,),
                 ),
             ),
+            */
             Center(
-                child: Jx3CalcOfGuguguMain(),
+                child: Jx3CalcOfGuGuGuMain(),
             ),
           ],
         ),
